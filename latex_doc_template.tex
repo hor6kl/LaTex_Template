@@ -1,0 +1,100 @@
+
+\documentclass{proc-cz}
+
+\addbibresource{Pouzita_lit.bib}
+
+% \font\myfont=cmr12 at 30pt
+% \title{\myfont }
+% \author{First Second}
+% \date{XX.XX.XXXX}
+
+\begin{document}
+\pagenumbering{gobble}
+\begin{titlepage}
+\begin{center}
+
+\includegraphics[scale = 0.5]{logo_jvs.jpg}
+
+\large
+Institution
+\vspace{2.8cm}
+
+\Large
+\textbf{THESIS NAME}
+
+
+\vspace{5.5cm}
+\Large
+Name of the author
+
+\vspace{0.8cm}
+Place Date 
+
+
+\end{center}
+\end{titlepage}
+
+% \pagenumbering{roman}
+%\tableofcontent
+%\newpage
+%\pagenumbering{arabic}
+\pagenumbering{roman}
+%\glsaddall
+
+
+%\newpage
+%\section*{Abstrakt}
+%
+%
+%\section*{Abstract}
+
+
+\newpage
+\tableofcontents
+\newpage
+%\listoffigures
+%\newpage
+%\listoftables
+%\newpage
+%\printglossary[title={Seznam označení}]
+% To add all entries in clasical glossary use /glsaddall
+\printunsrtglossary[type=gls_entry]
+\newpage
+
+
+\pagenumbering{arabic}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Nova kapitola
+\section{Úvod}
+
+\gls{beta_0}
+\gls{ec}
+\gls{alpha}
+\gls{alpha_1}
+\gls{alpha_2}
+\gls{alpha_0}
+\gls{html}
+\gls{abnt}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Nova kapitola
+\newpage
+
+\section{Závěr}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Nova kapitola
+\newpage
+\printbibliography[title={Použitá literatura}]
+
+\end{document}
+
+
+
+
+
+
+
+
+
+

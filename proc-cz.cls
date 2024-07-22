@@ -6,6 +6,8 @@
 % Xelatex is generating .log file defaultly in UTF-8
 %\usepackage{fontspec}
 
+\usepackage{lipsum} % For dummy text
+
 % Czech coding (remove when using english) 
 % This changes also names of conclusion, etc...
 \RequirePackage[czech]{babel}
@@ -103,6 +105,25 @@
 
 %subfloat package
 \RequirePackage{subfig}
+
+% Header
+\RequirePackage{fancyhdr}
+% Define the fancy header
+\fancypagestyle{myfancy}{
+  \fancyhf{}
+  \fancyhead[L]{\nouppercase{\leftmark}}  % Current section title on the left
+  \fancyhead[R]{\nouppercase{\rightmark}} % Current subsection title on the right
+  \fancyfoot[C]{\hfill\thepage\hfill}   % Page number in the center of the footer
+  \renewcommand{\headrulewidth}{0.4pt} % Set header rule width
+}
+% Define a plain page style for the glossary
+\fancypagestyle{plainstyle}{
+  \fancyhf{} % Clear header and footer
+  \fancyfoot[C]{\thepage} % Only page number in footer
+  \renewcommand{\headrulewidth}{0pt} % Remove header rule
+}
+% Redefine subsection mark to include subsection in the header
+\renewcommand{\subsectionmark}[1]{\markright{#1}} 
 
 % Change captions etc.
 \renewcommand{\tablename}{Tab.}

@@ -13,7 +13,8 @@
 \begin{titlepage}
 \begin{center}
 
-\includegraphics[scale = 0.5]{logo_jvs.jpg}
+% Include figure at the top of the first page
+%\includegraphics[scale = 0.5]{logo_jvs.jpg}
 
 \large
 Institution
@@ -49,6 +50,7 @@ Place Date
 %\section*{Abstract}
 
 
+\pagestyle{plainstyle}
 \newpage
 \tableofcontents
 \newpage
@@ -60,13 +62,19 @@ Place Date
 % To add all entries in clasical glossary use /glsaddall
 \printunsrtglossary[type=gls_entry]
 \newpage
-
+\pagestyle{myfancy}
 
 \pagenumbering{arabic}
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %Nova kapitola
 \section{Úvod}
+\lipsum[1] % Dummy text
 
+% strat header and footer
+% Page style
+
+\subsection{Glossaries example}
+\lipsum[2] % Dummy text
 \gls{beta_0}
 \gls{ec}
 \gls{alpha}
@@ -81,7 +89,7 @@ Place Date
 \newpage
 
 \section{Závěr}
-
+\lipsum[3] % Dummy text
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %Nova kapitola
 \newpage
